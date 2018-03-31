@@ -11,7 +11,9 @@ static void gamesx(int xSIZEc, int xRANGEc, bool islotto, int ball)
 
 	for (int x = 0; x < xSIZEc; x++)
 	{
-		for (int z = 0; z < xSIZEc; z++)
+		for (int y = 0; y < xSIZEc; y++)
+		{
+			for (int z = 0; z < xSIZEc; z++)
 			{
 				if (hc == (GGGc[z]))
 				{
@@ -25,9 +27,13 @@ static void gamesx(int xSIZEc, int xRANGEc, bool islotto, int ball)
 					            }
 				         }
 				}
+				 
 			}
-       GGGc[x] = hc; 	
+	
+		}
+       	GGGc[x] = hc;
 	}
+
 	for (int z = 0; z < xSIZEc; z++)
 	{
 		printf("%d = ", GGGc[z]);
