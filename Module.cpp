@@ -11,7 +11,6 @@ static void gamesx(int xSIZEc, int xRANGEc, bool islotto, int ball)
 
 	for (int x = 0; x < xSIZEc; x++)
 	{
-		hc = rand() % xRANGEc + 1;
 		for (int z = 0; z < xSIZEc; z++)
 			{
 				if (hc == (GGGc[z]))
@@ -59,7 +58,7 @@ int main()
 	struct tm tm;
 	localtime_s(&tm, &t);
 	// welcome text
-	printf("New York Lottery v3.4 by alcopaul (twitter: @thealcopaul)\n\n");
+	printf("New York Lottery v4.4 by alcopaul (twitter: @thealcopaul)\n\n");
 	printf("#########################################################\n\n");
 	// day as seed
 	srand((tm.tm_mon + 1) + (tm.tm_mday) + (tm.tm_year));
@@ -124,4 +123,4 @@ int main()
 	char c = getchar();
 	return 0;
 }
-// New York Lottery v3.4 by alcopaul (twitter: @thealcopaul)
+// New York Lottery v4.4 by alcopaul (twitter: @thealcopaul)
