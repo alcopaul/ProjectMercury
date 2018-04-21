@@ -64,10 +64,10 @@ int main()
 	struct tm tm;
 	localtime_s(&tm, &t);
 	// welcome text
-	printf("New York Lottery v4.4 by alcopaul (twitter: @thealcopaul)\n\n");
+	printf("New York Lottery v4.5 by alcopaul (twitter: @thealcopaul)\n\n");
 	printf("#########################################################\n\n");
 	// day as seed
-	srand((tm.tm_mon + 1) + (tm.tm_mday) + (tm.tm_year));
+	srand((tm.tm_mon + 2) + (tm.tm_mday - 1) + (tm.tm_year + 1900));
 	for (int i = 1; i < 7; i++)
 	{
 		switch (i)
@@ -129,4 +129,4 @@ int main()
 	char c = getchar();
 	return 0;
 }
-// New York Lottery v4.4 by alcopaul (twitter: @thealcopaul)
+// New York Lottery v4.5 by alcopaul (twitter: @thealcopaul)
