@@ -33,8 +33,8 @@ static void gamesx(int xSIZEc, int xRANGEc, bool islotto, int ball)
 				}
 
 			}
-			GGGc[x] = hc;
 		}
+		GGGc[e] = hc;
 	}
 	for (int z = 0; z < xSIZEc; z++)
 	{
