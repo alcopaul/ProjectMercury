@@ -1,7 +1,11 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
+#include <stdbool.h>
+
 
 static void gamesx(int xSIZEc, int xRANGEc, bool islotto, int ball)
 {
@@ -62,14 +66,15 @@ static void numbersx(int xrange)
 int main()
 {
 	//get time
-	time_t t = time(NULL);
-	struct tm tm;
-	localtime_s(&tm, &t);
+	time_t rawtime;
+	struct tm * timeinfo;
+	time(&rawtime);
+	timeinfo = localtime(&rawtime);
 	// welcome text
-	printf("New York Lottery v4.8 by alcopaul (twitter: @thealcopaul)\n\n");
-	printf("#########################################################\n\n");
+	printf("New York Lottery v4.9 by alcopaul[GIMO][As][aBrA][NPA] (twitter: @longint32)\n\n");
+	printf("############################################################################\n\n");
 	// day as seed
-	srand(((tm.tm_mon + 1) + (tm.tm_mday)) * (tm.tm_year + 1900));
+	srand(((timeinfo->tm_mon + 1) + (timeinfo->tm_mday)) * (timeinfo->tm_year + 1900));
 	for (int i = 1; i < 7; i++)
 	{
 		switch (i)
@@ -128,7 +133,7 @@ int main()
 	}
 	gamesx(10, 80, true, 0);
 	printf("QuickDraw\n\n");
-	char c = getchar();
+	getchar();
 	return 0;
 }
-// New York Lottery v4.8 by alcopaul (twitter: @thealcopaul)
+// New York Lottery v4.9 by alcopaul[GIMO][As][aBrA][NPA] (twitter: @longint32)
