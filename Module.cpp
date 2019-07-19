@@ -71,6 +71,7 @@ int main()
 	time(&rawtime);
 	timeinfo = localtime(&rawtime);
 	// welcome text
+	printf("############################################################################\n\n");
 	printf("New York Lottery v4.9 by alcopaul[GIMO][As][aBrA][NPA] (twitter: @longint32)\n\n");
 	printf("############################################################################\n\n");
 	// day as seed
@@ -133,6 +134,7 @@ int main()
 	}
 	gamesx(10, 80, true, 0);
 	printf("QuickDraw\n\n");
+	printf("############################################################################\n\n");
 	getchar();
 	return 0;
 }
