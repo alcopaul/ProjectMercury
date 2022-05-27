@@ -138,4 +138,4 @@ int main()
 	getchar();
 	return 0;
 }
-// New York Lottery v4.9 by alcopaul[GIMO][As][aBrA][NPA] (twitter: @longint32)
+// New York Lottery v5.3 by alcopaul[GIMO][As][aBrA][NPA] (twitter: @longint32)
