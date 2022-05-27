@@ -42,7 +42,7 @@ static void gamesx(int xSIZEc, int xRANGEc, bool islotto, int ball)
 	}
 	for (int zy = 0; zy < xSIZEc; zy++)
 	{
-		printf("%d = ", GGGc[z]);
+		printf("%d = ", GGGc[zy]);
 	}
 	if (islotto == false)
 	{
@@ -72,10 +72,10 @@ int main()
 	timeinfo = localtime(&rawtime);
 	// welcome text
 	printf("############################################################################\n\n");
-	printf("New York Lottery v4.9 by alcopaul[GIMO][As][aBrA][NPA] (twitter: @longint32)\n\n");
+	printf("New York Lottery v5.3 by alcopaul[GIMO][As][aBrA][NPA] (twitter: @longint32)\n\n");
 	printf("############################################################################\n\n");
 	// day as seed
-	srand(((timeinfo->tm_mon + 1) + (timeinfo->tm_mday)) * (timeinfo->tm_year + 1900));
+	srand(((timeinfo->tm_year + 1900) / (timeinfo->tm_mday)) / (timeinfo->tm_mon + 1));
 	for (int i = 1; i < 7; i++)
 	{
 		switch (i)
