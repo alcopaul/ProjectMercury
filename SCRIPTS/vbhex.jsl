@@ -1,0 +1,14 @@
+package V;
+import System.*;
+import Microsoft.VisualBasic.*;
+public class A
+{
+public static void main()
+{
+Console.WriteLine(Conversion.Hex(19));
+}
+}
+// Using Microsoft.VisualBasic Namespace In Visual J#
+// by alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf]
+// 6/18/2022
+// to compile: vjc /r:Microsoft.VisualBasic.dll vbhex.jsl
